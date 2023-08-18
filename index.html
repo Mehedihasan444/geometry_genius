@@ -9,20 +9,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="m-16">
-    <header class="flex justify-between items-center bg-slate-200 p-5 rounded-xl mb-10">
-        <div class="">
-            <h1 class="text-4xl font-bold"> Geometry Genius</h1> <br>
-            <h1 class="text-3xl "> Interactive</h1>
+<body class="m-5 md:m-16">
+    <header class="flex flex-col md:flex-row justify-between items-center bg-slate-200 p-5 rounded-xl mb-10">
+        <div class="mb-5">
+            <h1 class="text-2xl md:text-4xl font-bold sm:text-center block"> Geometry Genius</h1> 
+            <h1 class="text-xl md:text-3xl text-center md:text-left"> Interactive</h1>
         </div>
         <div class="">
-            <button class="btn btn-primary px-10  text-xl">Blog</button>
+            <button class="btn btn-primary md:px-10 px-5  md:text-xl">Blog</button>
         </div>
     </header>
     <main>
-        <section class="grid grid-cols-4 gap-5 ">
+        <section class="grid md:grid-cols-4 gap-5 ">
             <!-- card 1-->
-            <div class="card  bg-base-100 shadow-xl text-center">
+            <div class="card order-2  bg-base-100 shadow-xl text-center">
                 <figure class="p-5"><img src="./images/triangle.png" alt="Shoes" /></figure>
                 <div class="space-y-5 p-5">
                     <h2 class="text-2xl font-bold">Triangle</h2>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <!-- card 2-->
-            <div class="card  bg-base-100 shadow-xl text-center">
+            <div class="card order-3 bg-base-100 shadow-xl text-center">
                 <figure class="p-5"><img src="./images/rectangle.png" alt="Shoes" /></figure>
                 <div class="space-y-5 p-5">
                     <h2 class="text-2xl font-bold">Rectangle</h2>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <!-- card 3-->
-            <div class="card  bg-base-100 shadow-xl text-center">
+            <div class="card order-4 bg-base-100 shadow-xl text-center">
                 <figure class="p-5"><img src="./images/parallelogram.png" alt="Shoes" /></figure>
                 <div class="space-y-5 p-5">
                     <h2 class="text-2xl font-bold">Parallelogram</h2>
@@ -64,14 +64,14 @@
                 </div>
             </div>
             <!-- card 4-->
-            <div class="card p-5 bg-base-100 shadow-xl text-center row-span-2">
-                <h1 class="underline text-2xl font-bold">Area Calculation</h1>
+            <div class="card order-1 md:order-4 p-5 bg-base-100 shadow-xl text-center row-span-2">
+                <h1 class="underline text-2xl font-bold mb-5">Area Calculation</h1>
                 <div id="area-record">
                     <!-- area-record -->
                 </div>
             </div>
             <!-- card 4-->
-            <div class="card  bg-base-100 shadow-xl text-center">
+            <div class="card order-5  bg-base-100 shadow-xl text-center">
                 <figure class="p-5"><img src="./images/rhombus.png" alt="Shoes" /></figure>
                 <div class="space-y-5 p-5">
                     <h2 class="text-2xl font-bold">Rhombus</h2>
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <!-- card 5-->
-            <div class="card  bg-base-100 shadow-xl text-center">
+            <div class="card order-6  bg-base-100 shadow-xl text-center">
                 <figure class="p-5"><img src="./images/pentagon.png" alt="Shoes" /></figure>
                 <div class="space-y-5 p-5">
                     <h2 class="text-2xl font-bold">Pentagon</h2>
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <!-- card 6-->
-            <div class="card  bg-base-100 shadow-xl text-center">
+            <div class="card order-7 bg-base-100 shadow-xl text-center">
                 <figure class="p-5"><img src="./images/ellipse.png" alt="Shoes" /></figure>
                 <div class="space-y-5 p-5">
                     <h2 class="text-2xl font-bold">Ellipse</h2>

@@ -51,7 +51,7 @@ function areaCalculation(firstId, secondId, type) {
 function showAreaValue(area,type) {
     const parent = document.getElementById('area-record');
     const p = document.createElement('p');
-    p.textContent = count+"." +"Calculated Area of "+ type.toUpperCase() + ": " + area;
+    p.textContent = count+". " +"Calculated Area of "+ type.toUpperCase() + " : " + area;
     parent.appendChild(p);
 }
 
