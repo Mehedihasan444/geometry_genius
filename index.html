@@ -10,7 +10,7 @@
 </head>
 
 <body class="m-16">
-    <header class="flex justify-between items-center bg-slate-300 p-5 rounded-xl mb-10">
+    <header class="flex justify-between items-center bg-slate-200 p-5 rounded-xl mb-10">
         <div class="">
             <h1 class="text-4xl font-bold"> Geometry Genius</h1> <br>
             <h1 class="text-3xl "> Interactive</h1>
@@ -28,11 +28,11 @@
                     <h2 class="text-2xl font-bold">Triangle</h2>
                     <p>Area (A) = 0.5 x b x h</p>
                     <div class="flex justify-center">
-                        <input type="number" placeholder="base" class="w-20 bg-slate-300 pl-3 mr-3"> <span>cm</span>
-                        <input type="number" placeholder="height"
-                            class="w-20 bg-slate-300 pl-3 mr-3 ml-5"><span>cm</span>
+                        <input id="t-in-b" type="number" placeholder="base" class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm"> <span>cm</span>
+                        <input id="t-in-h" type="number" placeholder="height"
+                            class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm ml-5"><span>cm</span>
                     </div>
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button id="btn-t" class="btn btn-primary w-full">Calculate</button>
                 </div>
             </div>
             <!-- card 2-->
@@ -42,11 +42,11 @@
                     <h2 class="text-2xl font-bold">Rectangle</h2>
                     <p>Area (A) = w x l</p>
                     <div class="flex justify-center">
-                        <input type="number" placeholder="width" class="w-20 bg-slate-300 pl-3 mr-3"> <span>cm</span>
-                        <input type="number" placeholder="length"
-                            class="w-20 bg-slate-300 pl-3 mr-3 ml-5"><span>cm</span>
+                        <input id="r-in-w" type="number" placeholder="width" class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm"> <span>cm</span>
+                        <input id="r-in-l" type="number" placeholder="length"
+                            class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm ml-5"><span>cm</span>
                     </div>
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button id="btn-r" class="btn btn-primary w-full">Calculate</button>
                 </div>
             </div>
             <!-- card 3-->
@@ -56,16 +56,19 @@
                     <h2 class="text-2xl font-bold">Parallelogram</h2>
                     <p>Area (A) = b x h</p>
                     <div class="flex justify-center">
-                        <input type="number" placeholder="base" class="w-20 bg-slate-300 pl-3 mr-3"> <span>cm</span>
-                        <input type="number" placeholder="height"
-                            class="w-20 bg-slate-300 pl-3 mr-3 ml-5"><span>cm</span>
+                        <input id="p-in-b" type="number" placeholder="base" class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm"> <span>cm</span>
+                        <input id="p-in-h" type="number" placeholder="height"
+                            class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm ml-5"><span>cm</span>
                     </div>
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button id="btn-p" class="btn btn-primary w-full">Calculate</button>
                 </div>
             </div>
             <!-- card 4-->
             <div class="card p-5 bg-base-100 shadow-xl text-center row-span-2">
-                <h1 class="underline text-2xl font-bold">Area Calculatio</h1>
+                <h1 class="underline text-2xl font-bold">Area Calculation</h1>
+                <div id="area-record">
+                    <!-- area-record -->
+                </div>
             </div>
             <!-- card 4-->
             <div class="card  bg-base-100 shadow-xl text-center">
@@ -74,10 +77,10 @@
                     <h2 class="text-2xl font-bold">Rhombus</h2>
                     <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                     <div class="flex justify-center">
-                        <input type="number" placeholder="d1" class="w-20 bg-slate-300 pl-3 mr-3"> <span>cm</span>
-                        <input type="number" placeholder="d2" class="w-20 bg-slate-300 pl-3 mr-3 ml-5"><span>cm</span>
+                        <input id="r-in-d1" type="number" placeholder="Diagonal-1" class="w-24 bg-slate-300 pl-3 mr-3 rounded-sm"> <span>cm</span>
+                        <input id="r-in-d1" type="number" placeholder="Diagonal-2" class="w-24 bg-slate-300 pl-3 mr-3 rounded-sm ml-5"><span>cm</span>
                     </div>
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button id="btn-rh" class="btn btn-primary w-full">Calculate</button>
                 </div>
             </div>
             <!-- card 5-->
@@ -85,12 +88,12 @@
                 <figure class="p-5"><img src="./images/pentagon.png" alt="Shoes" /></figure>
                 <div class="space-y-5 p-5">
                     <h2 class="text-2xl font-bold">Pentagon</h2>
-                    <p>Area (A) = 0.5 x p x b</p>
+                    <p>Area (A) = (1/4) x <span>&#8730;</span>(5(5+2<span>&#8730;</span>5)) x a<sup>2</sup></p>
                     <div class="flex justify-center">
-                        <input type="number" placeholder="p" class="w-20 bg-slate-300 pl-3 mr-3"> <span>cm</span>
-                        <input type="number" placeholder="b" class="w-20 bg-slate-300 pl-3 mr-3 ml-5"><span>cm</span>
+                       
+                        <input id="p-in-a" type="number" placeholder="a" class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm ml-5"><span>cm</span>
                     </div>
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button id="btn-pen" class="btn btn-primary w-full">Calculate</button>
                 </div>
             </div>
             <!-- card 6-->
@@ -100,14 +103,15 @@
                     <h2 class="text-2xl font-bold">Ellipse</h2>
                     <p>Area (A) = π x a x b</p>
                     <div class="flex justify-center">
-                        <input type="number" placeholder="a" class="w-20 bg-slate-300 pl-3 mr-3"> <span>cm</span>
-                        <input type="number" placeholder="b" class="w-20 bg-slate-300 pl-3 mr-3 ml-5"><span>cm</span>
+                        <input id="e-in-a" type="number" placeholder="a-axis" class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm"> <span>cm</span>
+                        <input id="e-in-b" type="number" placeholder="b-axis" class="w-20 bg-slate-300 pl-3 mr-3 rounded-sm ml-5"><span>cm</span>
                     </div>
-                    <button class="btn btn-primary w-full">Calculate</button>
+                    <button id="btn-e" class="btn btn-primary w-full">Calculate</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
